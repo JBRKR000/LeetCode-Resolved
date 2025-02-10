@@ -19,9 +19,6 @@ Output: 6
 Explanation: The last word is "joyboy" with length 6.
  */
 
-
-import java.util.Arrays;
-
 public class Solution {
     public int lengthOfLastWord(String s) {
         String[] splits = s.split(" ");
