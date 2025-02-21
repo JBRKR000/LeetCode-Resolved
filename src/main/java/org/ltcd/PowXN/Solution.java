@@ -14,6 +14,26 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
  */
 public class Solution {
     public double myPow(double x, int n) {
+        /*
+      PREVIOUS ALGORITHM WHICH HAS TOO LARGE EXECUTION TIME
+           if(n == 0) return 1;
+        else if (n == 1) return x;
+        else if(n>0){
+            double number = x;
+            for(int i = 0; i< n - 1; i++){
+                number = number*x;
+            }
+            return number;
+        } else {
+            double newX = 1/x;
+            double number = newX;
+            for(int i = 0; i < -n - 1; i++){
+                number = number*newX;
+            }
+            return number;
+        }
+    }
+         */
         if (n == 0) return 1;
         if(x==1 && n == -2147483648) return 1;
         if(x==2 && n == -2147483648) return 0;
